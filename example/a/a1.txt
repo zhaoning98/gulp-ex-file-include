@@ -1,0 +1,4 @@
+this is a1
+
+// include a2
+@@include('./a2.txt')

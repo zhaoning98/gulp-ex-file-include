@@ -1,0 +1,94 @@
+
+
+
+index
+
+this is a1
+
+// include a2
+this is a2
+
+// include b1
+this is b1
+
+// include b2
+this is b2
+
+
+
+
+this is d1.txt
+
+index.txtIndex.txt
+
+
+
+
+this is d2.txt
+
+Lili
+
+this is loop 1this is loop 2
+this is d2.txt
+
+Lala
+
+this is loop 1this is loop 2
+this is d2.txt
+
+FeFe
+
+this is loop 1this is loop 2
+
+
+this is d1.txt
+
+filenamefilename
+
+
+  Lili
+
+  Lala
+
+  FeFe
+
+
+
+this is d2.txt
+
+Lili
+
+this is loop 1this is loop 2
+this is d2.txt
+
+Lala
+
+this is loop 1this is loop 2
+this is d2.txt
+
+FeFe
+
+this is loop 1this is loop 2
+
+example
+
+
+  this is conditional
+
+Flatten object "@@obj"
+
+  Flatten variable "flatten param"
+
+Defined in parent "success"
+Context variable "example"
+  this is conditional
+
+Flatten object "@@obj"
+
+Defined in parent "success too"
+Context variable "example"
+
+  Defined in include @@param
+
+
+this is loop 1this is loop 2this is loop 3

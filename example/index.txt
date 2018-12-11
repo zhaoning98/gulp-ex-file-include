@@ -1,0 +1,35 @@
+
+
+
+index
+
+@@include('a/a1.txt')
+
+@@include('d/d1.txt', {
+  "fileName": "index.txtIndex.txt",
+  "arr": []
+})
+
+@@include('d/d1.txt', '/d/data.json')
+
+@@name
+
+@@if (context.name === 'example') {
+  @@include('conditional.txt', {
+    "param": "success",
+    "obj": {
+      "obj_param": "flatten param"
+    }
+  })
+  @@include('conditional.txt', {
+    "param": "success too"
+  })
+
+  Defined in include @@param
+}
+
+@@loop('c/c.txt', [
+  { "number": 1 },
+  { "number": 2 },
+  { "number": 3 }
+])

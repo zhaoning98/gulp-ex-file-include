@@ -1,0 +1,10 @@
+
+this is d1.txt
+
+@@fileName
+
+@@for(var i = 0; i < ((arr && arr.length) || 0); i++) {
+  `+arr[i].name+`
+}
+
+@@loop('d2.txt', '/d/arr.json')
