@@ -7,4 +7,6 @@ this is d1.txt
   `+arr[i].name+`
 }
 
-@@loop('d2.txt', '/d/arr.json')
+@@include('d2.txt', `fileName`)
+
+@@loop('d3.txt', `arr`)

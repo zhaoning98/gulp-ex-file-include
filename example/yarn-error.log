@@ -1,0 +1,40 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe C:\Users\aaa\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add balanced-match
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\nodejs\;C:\Program Files\TortoiseGit\bin;D:\Program Files\Git\cmd;D:\Program Files (x86)\Subversion\bin;C:\ProgramData\chocolatey\bin;E:\workspace\autoTest\webDriver;E:\360Downloads\Software2\TortoiseSVN\bin;C:\Ruby25-x64\bin;C:\Users\aaa\AppData\Local\Microsoft\WindowsApps;C:\Users\aaa\AppData\Roaming\npm;C:\Users\aaa\AppData\Local\Android\Sdk\tools;C:\Users\aaa\AppData\Local\Android\Sdk\platform-tools;C:\mozilla-build;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\bin;;E:\360Downloads\Software\Fiddler;E:\360Downloads\Software2\Microsoft VS Code\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "gulp include"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "gulp": "^4.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\aaa\AppData\Local\Yarn\Cache\v1\npm-kind-of-5.1.0-729c91e2d857b7a419a1f9aa65685c4c33f5845d\package.json' -> 'E:\LEARN\better\gulp-ex-file-include\example\node_modules\define-property\node_modules\kind-of\package.json'

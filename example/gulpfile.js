@@ -4,7 +4,7 @@ const fileinclude = require('..')
 const gulp = require('gulp')
 
 gulp.task('include', () => {
-  gulp.src(['index.txt'])
+  return gulp.src(['index.txt'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file',

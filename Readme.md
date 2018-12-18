@@ -5,12 +5,12 @@
 [![Dependency status][david-img]][david-url]
 [![Gitter][gitter-img]][gitter-url]
 
-### gulp-file-include
+### gulp-ex-file-include
 a plugin of gulp for file include
 
 ### install
 ```bash
-npm install gulp-file-include
+npm install gulp-ex-file-include
 ```
 
 ### options
@@ -150,18 +150,23 @@ gulp.task('fileinclude', function() {
 ```
 
 ### `include` statement
-```js
-@@include('a/a1.txt')
 
-@@include('d/d1.txt', {
-  "fileName": "index.txtIndex.txt",
+index.html
+```html
+@@include('file.html', {
+  "fileName": "index.txtIndex.txtIndex",
   "arr": []
 })
-
-@@include('d/d1.txt', '/d/data.json')
 ```
 
-```data.json
+### `include` statement + data.json
+index.html
+```html
+@@include('article.html', 'data.json')
+```
+
+data.json
+```json
 {
   "fileName": "filenamefilename",
   "arr": [
@@ -174,6 +179,35 @@ gulp.task('fileinclude', function() {
     }
   ]
 }
+```
+
+### `include` statement + variable
+* index.html
+```html
+  @@inlcude("list.html", {
+    "title": "列表",
+    "list": [
+      { "title": "My post title", "text": "<p>lorem ipsum...</p>" },
+      { "title": "Another post", "text": "<p>lorem ipsum...</p>" },
+      { "title": "One more post", "text": "<p>lorem ipsum...</p>" }
+    ]
+  })
+```
+
+* list.html
+```html
+<body>
+  @@title
+  @@loop("item.html", `list`)
+</body>
+```
+
+* item.html
+```html
+<div>
+  @@title
+  @@text
+</div>
 ```
 
 ### `if` statement
@@ -238,7 +272,6 @@ fileinclude({
 ### `loop` statement + data.json
 
 data.json
-
 ```js
 [
   { "title": "My post title", "text": "<p>lorem ipsum...</p>" },
@@ -251,6 +284,26 @@ data.json
 ```html
 <body>
   @@loop("loop-article.html", "data.json")
+</body>
+```
+
+### `loop` statement + variable
+
+* index.html
+```html
+  @@inlcude("loop-article.html", {
+    "list": [
+      { "title": "My post title", "text": "<p>lorem ipsum...</p>" },
+      { "title": "Another post", "text": "<p>lorem ipsum...</p>" },
+      { "title": "One more post", "text": "<p>lorem ipsum...</p>" }
+    ]
+  })
+```
+
+* loop-article.html
+```html
+<body>
+  @@loop("loop-article.html", `list`)
 </body>
 ```
 
